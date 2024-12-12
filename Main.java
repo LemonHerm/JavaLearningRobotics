@@ -1,23 +1,11 @@
-package Java102;
+package java101;
 
-import java.util.ArrayList;
-
-import Java102.Library.LibraryItem;
+import java.util.Arrays;
 
 public class Main {
-    public static void returnAll(LibraryItem[] items) {
-        for (int i = 0; i < items.length; i ++) {
-            items[i].returnItem();
-        }
-    }
-    
-    public static ArrayList<LibraryItem> availableItems(LibraryItem[] items) {
-        ArrayList<LibraryItem> Available_items = new ArrayList<>();
-        for (int i = 0; i < items.length; i ++) {
-            if (items[i].available()) {
-                Available_items.add(items[i]);
-            }
-        }
-        return Available_items;
-    }
+	public static void main(String[] args) {
+		int[] arr = {1, 2, 3, 4, 5, 3};
+		int[] new_array = PracticeProblems.reverseArray(arr);
+		System.out.println(Arrays.toString(new_array));
+	}
 }
